@@ -1,2 +1,3 @@
 # coming-soon-template
-Minimalistic Coming Soon web page.
+
+Library that returns a web page with a countdown to the start of the page.

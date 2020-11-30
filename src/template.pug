@@ -1,0 +1,26 @@
+doctype html
+html(class="coming-soon")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="icon", href="https://raw.githubusercontent.com/cyntl3r/coming-soon-docker/master/src/template/icon.png")
+    link(rel="stylesheet", href="")
+    link(rel="stylesheet", href="./template.scss")
+    title {{ pageTitle }}
+  body
+    main
+      section
+        ul
+          li
+            span(class="value", id="days") 0
+            span(class="name") {{ daysLabel }}
+          li
+            span(class="value", id="hours") 0
+            span(class="name") {{ hoursLabel }}
+          li
+            span(class="value", id="minutes") 0
+            span(class="name") {{ minutesLabel }}
+          li
+            span(class="value", id="seconds") 0
+            span(class="name") {{ secondsLabel }}
+    script(src="./template.ts")

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&amp;amp;subset=latin-ext');
+
+html.coming-soon {
+  * {
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  &,
+  body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+  }
+
+  main {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #000;
+    &.visible {
+      opacity: 1;
+    }
+    section {
+      h2 {
+        margin-bottom: 40px;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+          display: inline-block;
+          margin: 0 10px 20px;
+          width: 100px;
+          span {
+            display: block;
+            &.value {
+              border: 2px solid #000;
+              padding: 17px 0;
+              font-size: 2em;
+              letter-spacing: 2px;
+              font-family: 'Times New Roman';
+              min-height: 75px;
+            }
+            &.name {
+              text-transform: lowercase;
+              margin-top: 8px;
+            }
+          }
+          @media (max-width: 480px) {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}

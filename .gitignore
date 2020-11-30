@@ -1,0 +1,7 @@
+node_modules/
+dist/
+test/
+temp/
+.cache/
+scripts/*.js
+.DS_Store

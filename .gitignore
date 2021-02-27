@@ -1,7 +1,8 @@
 node_modules/
 dist/
-test/
+ssrTest/
 temp/
+lib/
 .cache/
 scripts/*.js
 .DS_Store
